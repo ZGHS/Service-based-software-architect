@@ -1,0 +1,11 @@
+com\pojo\item\entity\User.class
+com\pojo\item\config\JdbcConfigBean.class
+com\pojo\item\service\UserService.class
+com\pojo\item\controller\ReservationController.class
+com\pojo\item\entity\Reservation.class
+com\pojo\item\controller\TicketController.class
+com\pojo\item\feign\UserFeignClient.class
+com\pojo\item\runner\ItemApp.class
+com\pojo\item\service\ReservationService.class
+com\pojo\item\service\TicketService.class
+com\pojo\item\entity\Ticket.class

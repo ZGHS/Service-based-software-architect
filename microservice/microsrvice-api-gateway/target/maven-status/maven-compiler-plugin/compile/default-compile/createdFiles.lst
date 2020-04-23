@@ -1,0 +1,3 @@
+com\pojo\gateway\runner\ApiGatewayApplication.class
+com\pojo\gateway\filter\UserLoginZuulFilter.class
+com\pojo\gateway\runner\ApiGatewayApplication$DocumentationConfig.class

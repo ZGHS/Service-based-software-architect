@@ -1,0 +1,13 @@
+com\pojo\payment\feign\ReservationFeignClient.class
+com\pojo\payment\entity\Payment.class
+com\pojo\payment\service\ReservationService.class
+com\pojo\payment\service\TicketService.class
+com\pojo\payment\feign\TicketFeignClient.class
+com\pojo\payment\service\UserService.class
+com\pojo\payment\entity\Reservation.class
+com\pojo\payment\runner\PaymentApp.class
+com\pojo\payment\service\PaymentService.class
+com\pojo\payment\entity\Ticket.class
+com\pojo\payment\controller\PaymentController.class
+com\pojo\payment\entity\User.class
+com\pojo\payment\feign\UserFeignClient.class
