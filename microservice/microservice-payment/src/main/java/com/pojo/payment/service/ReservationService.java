@@ -18,13 +18,6 @@ public class ReservationService {
         return result;
     }
 
-
-    //    public String reserveTicket(Long userId,Long t_id) {
-//        return reservationFeignClient.reserveTicket(userId,t_id);
-//    }
-//
-//
-//
     public String removeReservation(Long userId, Long t_id) {
         return reservationFeignClient.removeReservation(userId, t_id);
     }

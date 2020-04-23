@@ -5,17 +5,12 @@ import com.pojo.payment.feign.TicketFeignClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.Map;
-
 @Service
 public class TicketService {
 
     @Autowired
     private TicketFeignClient ticketFeignClient;
 
-    public Map<Long, Ticket> getRestTicket() {
-        return ticketFeignClient.getRestTicket();
-    }
 
 
     public String changTicketState(Long t_id, Integer state) {

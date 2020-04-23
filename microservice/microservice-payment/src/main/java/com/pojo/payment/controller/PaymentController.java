@@ -85,11 +85,6 @@ public class PaymentController {
         if (ticketService.queryTicketById(t_id) == null) {
             return "Ticket doesn't exist!";
         }
-
-//        if (ticketService.queryTicketById(t_id).getTicket_state() == 0) {
-//            return "Ticket hasn't been reserved!";
-//        }
-
         if (ticketService.queryTicketById(t_id).getTicket_state() == 1) {
             return "Ticket hasn't  been paid!";
         }
@@ -99,7 +94,5 @@ public class PaymentController {
         this.paymentService.cancelPayment(userId, t_id);
         return "cancel successfully!";
     }
-
-
 }
 

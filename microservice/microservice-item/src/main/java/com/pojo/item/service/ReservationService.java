@@ -1,12 +1,7 @@
 package com.pojo.item.service;
 
 import com.pojo.item.entity.Reservation;
-import com.pojo.item.entity.Ticket;
-import org.apache.commons.lang.StringUtils;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.util.HashMap;
 import java.util.Map;
