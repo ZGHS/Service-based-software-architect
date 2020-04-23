@@ -69,7 +69,7 @@ public class PaymentController {
             return "You didn't  reserve this ticket!";
         }
         this.paymentService.payTicket(userId, t_id);
-        reservationService.cancelReservation(userId, t_id);
+//        reservationService.cancelReservation(userId, t_id);
         return "pay successfully!";
     }
 
