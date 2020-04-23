@@ -86,9 +86,9 @@ public class PaymentController {
             return "Ticket doesn't exist!";
         }
 
-        if (ticketService.queryTicketById(t_id).getTicket_state() == 0) {
-            return "Ticket hasn't been reserved!";
-        }
+//        if (ticketService.queryTicketById(t_id).getTicket_state() == 0) {
+//            return "Ticket hasn't been reserved!";
+//        }
 
         if (ticketService.queryTicketById(t_id).getTicket_state() == 1) {
             return "Ticket hasn't  been paid!";
