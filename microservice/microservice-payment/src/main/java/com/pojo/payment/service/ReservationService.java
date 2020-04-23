@@ -19,14 +19,14 @@ public class ReservationService {
     }
 
 
-//    public String reserveTicket(Long userId,Long t_id) {
+    //    public String reserveTicket(Long userId,Long t_id) {
 //        return reservationFeignClient.reserveTicket(userId,t_id);
 //    }
 //
 //
 //
-//    public String cancelReservation(Long userId,Long t_id) {
-//        return reservationFeignClient.cancelReservation(userId,t_id);
-//    }
+    public String removeReservation(Long userId, Long t_id) {
+        return reservationFeignClient.removeReservation(userId, t_id);
+    }
 }
 

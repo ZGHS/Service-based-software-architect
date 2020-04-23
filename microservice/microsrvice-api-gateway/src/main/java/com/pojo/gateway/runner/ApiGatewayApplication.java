@@ -37,8 +37,8 @@ public class ApiGatewayApplication {
         public List<SwaggerResource> get() {
             List resource = new ArrayList<>();
             //name可以随便写，location前缀要与zuul配置的path一致。zuul开了token验证,要加上token,否则不用加?token=1
-            resource.add(swaggerResource("microservice-ticket", "/item-service/v2/api-docs", "2.0"));
             resource.add(swaggerResource("microservice-user", "/order-service/v2/api-docs", "2.0"));
+            resource.add(swaggerResource("microservice-ticket", "/item-service/v2/api-docs", "2.0"));
             resource.add(swaggerResource("microservice-payment", "/payment-service/v2/api-docs", "2.0"));
             return resource;
         }

@@ -24,8 +24,8 @@ public interface ReservationFeignClient {
 //    String reserveTicket(@PathVariable("userId") Long userId, @PathVariable("t_id") Long t_id);
 //
 //
-//    @RequestMapping(value = "/item/cancelReservationAfterPayment/{userId}/{t_id}", method = RequestMethod.GET)
-//    String cancelReservation(@PathVariable("userId") Long userId, @PathVariable("t_id") Long t_id);
+    @RequestMapping(value = "/item/removeReservation/{userId}/{t_id}", method = RequestMethod.GET)
+    String removeReservation(@PathVariable("userId") Long userId, @PathVariable("t_id") Long t_id);
 
 
 }

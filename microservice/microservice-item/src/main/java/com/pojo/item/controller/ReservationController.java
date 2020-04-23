@@ -87,9 +87,9 @@ public class ReservationController {
 
     }
 
-    @GetMapping(value = "/item/cancelReservationAfterPayment/{userId}/{t_id}")
-    public void cancelReservationAfterPayment(@PathVariable("userId") Long userId, @PathVariable("t_id") Long t_id) {
-        this.reservationService.cancelReservationAfterPayment(userId, t_id);
+    @GetMapping(value = "/item/removeReservation/{userId}/{t_id}")
+    public void removeReservation(@PathVariable("userId") Long userId, @PathVariable("t_id") Long t_id) {
+        this.reservationService.removeReservation(userId, t_id);
     }
 }
 

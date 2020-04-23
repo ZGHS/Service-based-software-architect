@@ -45,9 +45,9 @@ public class ReservationService {
         ALL_RESERVATION_MAP.get(userId).remove(t_id);
         new TicketService().changTicketState(t_id, 0);
     }
-    public void cancelReservationAfterPayment(Long userId, Long t_id) {
+
+    public void removeReservation(Long userId, Long t_id) {
         ALL_RESERVATION_MAP.get(userId).remove(t_id);
-        new TicketService().changTicketState(t_id, 2);
     }
 
 
